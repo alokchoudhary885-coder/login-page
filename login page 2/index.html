@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login Portal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="auth-wrapper">
+
+        <div class="bg-gradient"></div>
+        <div class="bg-glass"></div>
+
+        <!-- LOGIN PANEL -->
+        <div class="credentials-panel signin">
+            <h2 class="slide-element">Login</h2>
+
+            <form>
+                <div class="field-wrapper slide-element">
+                    <input type="text" id="login-user" required>
+                    <label for="login-user">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="password" id="login-pass" required>
+                    <label for="login-pass">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <button class="submit-button">Login</button>
+                </div>
+
+                <div class="switch-link slide-element">
+                    Don’t have an account? <a href="#" class="register-trigger">Sign Up</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- WELCOME RIGHT PANEL -->
+        <div class="welcome-section signin">
+            <h2 class="slide-element">WELCOME<br>BACK!</h2>
+        </div>
+
+        <!-- SIGNUP PANEL -->
+        <div class="credentials-panel signup">
+            <h2 class="slide-element">Register</h2>
+
+            <form>
+                <div class="field-wrapper slide-element">
+                    <input type="text" id="reg-user" required>
+                    <label for="reg-user">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="email" id="reg-email" required>
+                    <label for="reg-email">Email</label>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <input type="password" id="reg-pass" required>
+                    <label for="reg-pass">Password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="field-wrapper slide-element">
+                    <button class="submit-button">Register</button>
+                </div>
+
+                <div class="switch-link slide-element">
+                    Already have an account? <a href="#" class="login-trigger">Sign In</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- WELCOME LEFT PANEL -->
+        <div class="welcome-section signup">
+            <h2 class="slide-element">CREATE<br>ACCOUNT</h2>
+        </div>
+
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
